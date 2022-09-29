@@ -1,0 +1,60 @@
+<header>
+    <!--- NavBar --->
+    <nav class="navbar navbar-expand-lg navbar-light bg-black">
+        <div class="container-fluid justify-content-between">
+
+            <!--- Left Elements --->
+            <div class="d-flex">
+                <a class="navbar-item d-sm-flex d-none aling-items-center" 
+                   href="https://argentinaprograma.inti.gob.ar/">
+                    <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1659143423/APLogo-20-20.png" 
+                         alt="Argentina Programa Logo">
+                </a>
+                <a class="navbar-item w-auto my-auto d-none d-sm-flex" 
+                   href="https://argentinaprograma.inti.gob.ar/">
+                   #YoProgramo
+                </a>
+            </div>
+
+            <!--- Center Elements ---> 
+            <a class="navbar-brand flex-row d-md-flex" href="">
+                <img src="assets\images\brand.png" alt="Full Stack Jr. Logo">
+            </a>
+
+            <!--- Right Elements --->
+           <button class="navbar-toggler"
+                   type="button"
+                   aria-controls="navbarToggler"
+                   aria-expanded="false"
+                   aria-label="Toggle navigation"
+            >
+                <fa-icon [icon]="faBars"></fa-icon>
+            </button>
+            <div 
+            > 
+                <ul class="navbar-nav">
+                    <li class="nav-item me-2 mb-2">
+                        <a class="btn" role="button" aria-current="page" href="#"> 
+                            <fa-icon [icon]="faGithub"></fa-icon> 
+                        </a>
+                    </li>
+                    <li class="nav-item me-2 mb-2 ">
+                        <a class="btn" role="button" href="#"> 
+                            <fa-icon [icon]="faTwitter"></fa-icon>
+                        </a>
+                    </li>
+                    <li class="nav-item me-2 mb-2">
+                        <a class="btn" role="button" href="#"> 
+                            <fa-icon [icon]="faInstagram"></fa-icon>
+                        </a>
+                    </li>
+                    <li class="nav-item me-2 mb-2 ">
+                        <a class="btn" role="button" href="#">
+                            <fa-icon [icon]="faSignIn"></fa-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>

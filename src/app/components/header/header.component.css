@@ -1,0 +1,26 @@
+nav.navbar .navbar-brand  img {
+    max-height: 80px;
+}
+
+nav.navbar .navbar-item  img {
+    max-height: 85px ;
+}
+
+/*--- #YoProgramo---*/
+nav.navbar div a.navbar-item {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    padding-top: 5px;
+    text-decoration: none;
+  }
+
+fa-icon {
+    font-size: 30px;
+    color: white;
+}
+
+.btn:hover {
+    color: #1639D6;
+    background: #1639D6;
+}
