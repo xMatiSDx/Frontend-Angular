@@ -15,6 +15,9 @@ nav.navbar div a.navbar-item {
     text-decoration: none;
   }
 
+.navbar-collapse{
+    flex-grow: 0;
+}
 fa-icon {
     font-size: 30px;
     color: white;
