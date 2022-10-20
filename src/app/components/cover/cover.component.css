@@ -9,9 +9,6 @@
     display: flex;
 }
 
-.first-row {
-    max-width: 70vw;
-}
 
 .first-row span {
     font-weight: bolder;
