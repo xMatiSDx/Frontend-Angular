@@ -6,12 +6,14 @@ import { HeaderComponent } from './components/header/header.component';
 import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CoverComponent } from './components/cover/cover.component';
+import { ExperienceComponent } from './components/experience/experience.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     CoverComponent,
+    ExperienceComponent,
   ],
   imports: [
     BrowserModule,
