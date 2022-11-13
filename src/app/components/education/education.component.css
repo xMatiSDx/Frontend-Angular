@@ -1,0 +1,14 @@
+section {
+    background-color: black;
+}
+
+/*--- BLUE LINE BETWEEN NAME AND ABOUT ---*/
+div.section-title .after:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: #1639D6;
+    position: relative;
+    flex-wrap: nowrap!important;
+}
