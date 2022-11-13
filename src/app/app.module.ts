@@ -7,6 +7,7 @@ import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CoverComponent } from './components/cover/cover.component';
 import { ExperienceComponent } from './components/experience/experience.component';
+import { EducationComponent } from './components/education/education.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { ExperienceComponent } from './components/experience/experience.componen
     HeaderComponent,
     CoverComponent,
     ExperienceComponent,
+    EducationComponent,
   ],
   imports: [
     BrowserModule,
