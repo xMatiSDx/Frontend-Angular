@@ -1,9 +1,87 @@
 section {
-    background-color: black;
+    background-color: #000000;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
+
+.experience .container{
+    background-color:  #111111;
+    border-radius: 15px;
+}
+
+/*--- SECTION TITLE ---*/
+.title {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+/*--- EXPERIENCE ITEMS CSS ---*/
+#item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* EXPERIENCE PICTURE */
+#item .row .col-lg-3 {
+    display:flex; 
+    align-self:center; 
+    justify-content: center; 
+    margin-top: 10px; 
+    margin-bottom: 10px;
+}
+
+#item .row .col-lg-3 .picture {
+    display: block; 
+    position:relative
+}
+
+#item .row .col-lg-3 .picture img {
+    border-bottom-left-radius: 50%; 
+    border-top-right-radius: 50%; 
+    border-bottom-right-radius: 50%; border-top-left-radius: 50%; 
+    height: 168px; 
+    width: 168px
+}
+/* EXPERIENCE TITLE */
+#item .section-title {
+    align-content: center; 
+    display: flex; 
+    flex-direction: column; 
+}
+
+#item .section-title .h1 {
+    display: flex; 
+    flex-wrap: nowrap;
+}
+
+#item div .col-lg-12 {
+    display:flex; 
+    justify-content: center; 
+    align-content: center; 
+    flex-direction: column;
+}
+
+#item div .col-lg-12 .title {
+    display: flex; 
+    position: relative; 
+    text-align: start; 
+    width: 100%;
+}
+
+#item div .col-lg-12 .title span {
+    width: 100%;
+    color: white;
+    font-size: 25px;
+}
+
+
+
 
 /*--- BLUE LINE BETWEEN NAME AND ABOUT ---*/
 div.section-title .after:after {
+    display:flex; 
+    align-items:center;
     content: '';
     display: block;
     width: 100%;

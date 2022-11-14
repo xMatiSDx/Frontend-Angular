@@ -1,5 +1,18 @@
 section {
-    background-color: black;
+    background-color: #000000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.education .container{
+    background-color:  #111111;
+    border-radius: 15px;
+}
+
+.title {
+    font-size: 40px;
+    color: white;
+    text-align: center;
 }
 
 /*--- BLUE LINE BETWEEN NAME AND ABOUT ---*/
