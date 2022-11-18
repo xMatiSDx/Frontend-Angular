@@ -6,12 +6,11 @@ section {
 
 .experience .container{
     background-color:  #111111;
-    border-radius: 15px;
+    border-radius: 15px; 
 }
 
 /*--- SECTION TITLE ---*/
 .title {
-    font-size: 40px;
     color: white;
     text-align: center;
 }
@@ -65,6 +64,7 @@ section {
 #item div .col-lg-12 .title {
     display: flex; 
     position: relative; 
+    align-items: center;
     text-align: start; 
     width: 100%;
 }
@@ -76,6 +76,27 @@ section {
 }
 
 
+/*--- EXPERIENCE DESCRIPTION ---*/
+.description {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.description .col-lg-12 {
+    align-content: center; 
+    display:flex; 
+    justify-content: center;
+}
+
+.description .col-lg-12 .text {
+    display: block; 
+    position: relative; 
+    text-align: justify;
+}
+
+.description .col-lg-12 span {
+    color: white;
+}
 
 
 /*--- BLUE LINE BETWEEN NAME AND ABOUT ---*/

@@ -134,7 +134,7 @@ section {
   background: #000000;
 } 
 
-.DownloadButton b:hover {
+.DownloadButton:hover b {
   color: white;
 }
 
