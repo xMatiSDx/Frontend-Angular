@@ -1,10 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { faPencil } from '@fortawesome/free-solid-svg-icons';
 import { faCamera } from '@fortawesome/free-solid-svg-icons';
 import { faAdd } from '@fortawesome/free-solid-svg-icons';
 import { faRemove } from '@fortawesome/free-solid-svg-icons';
 import { PortfolioService } from 'src/app/services/portfolio-service.service';
-import { EditButtonComponent } from '../edit-button/edit-button.component';
 
 @Component({
   selector: 'app-experience',
@@ -13,12 +12,15 @@ import { EditButtonComponent } from '../edit-button/edit-button.component';
 })
 export class ExperienceComponent implements OnInit {
 
+  
+
+
   faPencil = faPencil
   faCamera = faCamera
   faAdd = faAdd
   faRemove = faRemove
 
-  constructor(private portfolioInfo:PortfolioService) { }
+  constructor(private portfolioService:PortfolioService) { }
 
   ngOnInit(): void {
   }

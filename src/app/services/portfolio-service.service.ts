@@ -1,15 +1,20 @@
 import { Injectable } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http'
-import { Observable } from 'rxjs'
+import { HttpClientModule, HttpHandler } from '@angular/common/http'
+import { Observable, of } from 'rxjs'
+import { ExperienceComponent } from '../components/experience/experience.component';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PortfolioService {
 
+  private apiURL= "http://localhost:4200/experience"
   constructor(private http: HttpClientModule) { }
 
-  getInfo() {
-    console.log('Obteniendo datos')
-  }
+getInfo(): Observable<experiences[]> {
+console.log('Obteniendo datos')
+  return this.http.get(this.apiURL)
+}
+  
+}
 }
