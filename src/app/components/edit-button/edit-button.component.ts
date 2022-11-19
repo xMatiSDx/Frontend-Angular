@@ -1,6 +1,5 @@
-import { Component, Input, OnInit, } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output, } from '@angular/core';
 import { faPencil } from '@fortawesome/free-solid-svg-icons';
-
 
 @Component({
   selector: 'app-edit-button',
@@ -9,14 +8,14 @@ import { faPencil } from '@fortawesome/free-solid-svg-icons';
 })
 export class EditButtonComponent implements OnInit {
 
-  @Input() icon: string = '';
+  @Output() btnClick = new EventEmitter()
 
   faPencil = faPencil
 
   constructor() { }
 
-  logIcon() {
-    console.log(this.icon)
+  onClick() {
+    this.btnClick.emit()
   }
 
   ngOnInit(): void {

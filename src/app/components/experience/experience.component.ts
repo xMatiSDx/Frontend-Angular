@@ -12,15 +12,16 @@ import { PortfolioService } from 'src/app/services/portfolio-service.service';
 })
 export class ExperienceComponent implements OnInit {
 
-  
-
-
   faPencil = faPencil
   faCamera = faCamera
   faAdd = faAdd
   faRemove = faRemove
 
   constructor(private portfolioService:PortfolioService) { }
+
+  editContent() {
+    console.log('Edit!')
+  }
 
   ngOnInit(): void {
   }
