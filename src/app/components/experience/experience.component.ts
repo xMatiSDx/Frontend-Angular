@@ -3,6 +3,8 @@ import { faPencil } from '@fortawesome/free-solid-svg-icons';
 import { faCamera } from '@fortawesome/free-solid-svg-icons';
 import { faAdd } from '@fortawesome/free-solid-svg-icons';
 import { faRemove } from '@fortawesome/free-solid-svg-icons';
+import { PortfolioService } from 'src/app/services/portfolio-service.service';
+import { EditButtonComponent } from '../edit-button/edit-button.component';
 
 @Component({
   selector: 'app-experience',
@@ -16,7 +18,7 @@ export class ExperienceComponent implements OnInit {
   faAdd = faAdd
   faRemove = faRemove
 
-  constructor() { }
+  constructor(private portfolioInfo:PortfolioService) { }
 
   ngOnInit(): void {
   }

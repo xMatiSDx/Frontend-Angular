@@ -9,6 +9,9 @@ import { CoverComponent } from './components/cover/cover.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { EducationComponent } from './components/education/education.component';
 import { SkillsComponent } from './components/skills/skills.component';
+import { EditButtonComponent } from './components/edit-button/edit-button.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -18,12 +21,14 @@ import { SkillsComponent } from './components/skills/skills.component';
     ExperienceComponent,
     EducationComponent,
     SkillsComponent,
+    EditButtonComponent,
   ],
   imports: [
     BrowserModule,
     NgbModule,
     NgbCollapseModule,
     FontAwesomeModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
