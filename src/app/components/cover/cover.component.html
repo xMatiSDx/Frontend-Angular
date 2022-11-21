@@ -65,11 +65,7 @@
         </div>
          <!--- CHANGE BANNER PICTURE --->
          <div style="display: block; position:relative">
-            <div style="bottom: 0px; right: 0px; position: absolute; border-bottom-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-top-left-radius: 50%; background-color: rgb(71, 70, 70); height: 40px;">
-                <a class="btn" role="button" href="#" style="border-bottom-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-top-left-radius: 50%;">
-                    <fa-icon [icon]="faCamera" style="color:aliceblue"></fa-icon>
-                </a>
-            </div>
+            <app-edit-button type="bancam-box" (btnClick)="changePicture()" figure="camera"></app-edit-button>
         </div>
     </div>
 </section>
@@ -84,11 +80,7 @@
                         <img src="./assets/images/profilepicture.jpg" style=" border-bottom-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-top-left-radius: 50%; height: 168px; width: 168px">
                     </picture>
                     <!--- CHANGE PROFILE PICTURE --->
-                    <div style="top: 135px; right: 20px; position: absolute; border-bottom-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-top-left-radius: 50%; background-color: rgb(71, 70, 70); height: 40px;">
-                        <a class="btn" role="button" href="#" style="border-bottom-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-top-left-radius: 50%;">
-                            <fa-icon [icon]="faCamera" style="color:aliceblue"></fa-icon>
-                        </a>
-                    </div>
+                    <app-edit-button type="cam-box" (btnClick)="changePicture()" figure="camera"></app-edit-button>
                 </div>
             </div>
             <!--- PROFILE PRESENTATION --->
@@ -102,7 +94,7 @@
                             </span>
                         </div> 
                         <!--- PROFILE NAME EDIT BUTTON --->
-                        <app-edit-button></app-edit-button>
+                        <app-edit-button type="edit-box" (btnClick)="editContent()" figure="pencil"></app-edit-button>
                     </div>
                 </div>
                 <!--- BLUE LINE --->
@@ -116,7 +108,7 @@
                             </p>                                                        
                         </div>
                         <!--- ABOUT TEXT EDIT BUTTON --->
-                        <app-edit-button style="margin-bottom: 0px!;"></app-edit-button>
+                        <app-edit-button type="edit-box" (btnClick)="editContent()" figure="pencil"></app-edit-button>
                     </div>
                 </div>
             </div>

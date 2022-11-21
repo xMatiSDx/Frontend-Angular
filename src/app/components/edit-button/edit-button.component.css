@@ -1,4 +1,4 @@
-div {
+ [class^="edit-"] {
     display: flex;
     justify-content: center; 
     align-items: center; 
@@ -11,6 +11,28 @@ div {
     background-color: rgb(71, 70, 70); 
     height: 40px;
     position: relative;
+}
+
+[class^="cam-"] {
+    top: 135px; 
+    right: 20px; 
+    position: absolute; 
+    border-bottom-left-radius: 50%; 
+    border-top-right-radius: 50%; 
+    border-bottom-right-radius: 50%; 
+    border-top-left-radius: 50%; 
+    background-color: rgb(71, 70, 70); height: 40px;
+}
+
+[class^="bancam-"] {
+    bottom: 0px; 
+    right: 0px; 
+    position: absolute; 
+    border-bottom-left-radius: 50%; 
+    border-top-right-radius: 50%; 
+    border-bottom-right-radius: 50%; 
+    border-top-left-radius: 50%; 
+    background-color: rgb(71, 70, 70); height: 40px;
 }
 
 fa-icon {

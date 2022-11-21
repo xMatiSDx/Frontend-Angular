@@ -1,6 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output, } from '@angular/core';
-import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { icon, IconProp, library } from '@fortawesome/fontawesome-svg-core';
+import { Icon, icon, IconProp, Library, library } from '@fortawesome/fontawesome-svg-core';
 
 
 @Component({
@@ -12,6 +11,7 @@ export class EditButtonComponent implements OnInit {
 
   @Output() btnClick = new EventEmitter();
   @Input() figure: string = "";
+  @Input() type:string = "";
   
 
   constructor() { }

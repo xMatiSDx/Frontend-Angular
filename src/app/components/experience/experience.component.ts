@@ -1,8 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { faPencil } from '@fortawesome/free-solid-svg-icons';
-import { faCamera } from '@fortawesome/free-solid-svg-icons';
-import { faAdd } from '@fortawesome/free-solid-svg-icons';
-import { faRemove } from '@fortawesome/free-solid-svg-icons';
+
 import { PortfolioService } from 'src/app/services/portfolio-service.service';
 
 @Component({
@@ -12,15 +9,15 @@ import { PortfolioService } from 'src/app/services/portfolio-service.service';
 })
 export class ExperienceComponent implements OnInit {
 
-  faPencil = faPencil
-  faCamera = faCamera
-  faAdd = faAdd
-  faRemove = faRemove
 
   constructor(private portfolioService:PortfolioService) { }
 
   editContent() {
     console.log('Edit!')
+  }
+
+  changePicture() {
+    console.log('Change Picture!')
   }
 
   ngOnInit(): void {
