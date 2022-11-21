@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { faCamera } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-cover',
@@ -8,7 +7,6 @@ import { faCamera } from '@fortawesome/free-solid-svg-icons';
 })
 export class CoverComponent implements OnInit {
 
-  faCamera = faCamera
   constructor() { }
 
   editContent() {
