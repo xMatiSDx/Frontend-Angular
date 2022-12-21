@@ -1,7 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-import { PortfolioService } from 'src/app/services/portfolio-service.service';
-
 @Component({
   selector: 'app-experience',
   templateUrl: './experience.component.html',
@@ -10,7 +8,7 @@ import { PortfolioService } from 'src/app/services/portfolio-service.service';
 export class ExperienceComponent implements OnInit {
 
 
-  constructor(private portfolioService:PortfolioService) { }
+  constructor() { }
 
   editContent() {
     console.log('Edit!')

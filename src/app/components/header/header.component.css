@@ -23,6 +23,7 @@ nav.navbar div a.navbar-item {
 .navbar-collapse{
     flex-grow: 0;
 }
+
 fa-icon {
     font-size: 30px;
     color: white;
@@ -31,4 +32,20 @@ fa-icon {
 .btn:hover {
     color: #1639D6;
     background: #1639D6;
+}
+
+/*--- RESPONSIVE CSS in SMALL SCREENS---*/
+
+.navbar-nav li span {
+    color: white;
+    font-weight: bold;
+    font-size: 25px
+}
+
+@media screen and (min-width: 300px) {
+    .nav-item {
+      display: inline-block;
+      max-width: 100%;
+      text-align: center;
+   }
 }

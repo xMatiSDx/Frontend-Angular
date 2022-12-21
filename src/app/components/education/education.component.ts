@@ -1,8 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { faPencil } from '@fortawesome/free-solid-svg-icons';
-import { faCamera } from '@fortawesome/free-solid-svg-icons';
-import { faAdd } from '@fortawesome/free-solid-svg-icons';
-import { faRemove } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-education',
@@ -11,12 +7,16 @@ import { faRemove } from '@fortawesome/free-solid-svg-icons';
 })
 export class EducationComponent implements OnInit {
 
-  faPencil = faPencil
-  faCamera = faCamera
-  faAdd = faAdd
-  faRemove = faRemove
 
   constructor() { }
+
+  editContent() {
+    console.log('Edit!')
+  }
+
+  changePicture() {
+    console.log('Change Picture!')
+  }
 
   ngOnInit(): void {
   }

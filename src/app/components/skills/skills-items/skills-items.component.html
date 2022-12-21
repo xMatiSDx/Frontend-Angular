@@ -1,0 +1,16 @@
+<div id="item"  *ngFor="let data of skills" class="carousel-item {{data.class}}">
+    <div class="card">
+        <div class="box">
+            <div class="percent">
+                <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70" [ngStyle]="{'stroke' : data.color, 'stroke-dashoffset': (440 - (440 * data.percent) / 100)}" ></circle>
+                </svg>
+                <div class="number">
+                    <h2>{{data.percent}}<span>%</span></h2>
+                </div>
+            </div>
+            <h2 class="text">{{data.name}}</h2>
+        </div>
+    </div>
+</div>

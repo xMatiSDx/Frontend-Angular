@@ -1,5 +1,4 @@
 import { Component, EventEmitter, Input, OnInit, Output, } from '@angular/core';
-import { Icon, icon, IconProp, Library, library } from '@fortawesome/fontawesome-svg-core';
 
 
 @Component({

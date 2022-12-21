@@ -5,6 +5,7 @@ import { faGithub } from  '@fortawesome/free-brands-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faSignIn } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faRemove } from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
@@ -22,30 +23,18 @@ export class HeaderComponent implements OnInit {
 
   public isCollapsed : boolean = true;
 
-  set collapsed(isCollapsed: boolean) {
-    if (this.isCollapsed !== isCollapsed) {
-      this.isCollapsed = isCollapsed;
-    }
-  }
-
-  @Output() ngbCollapseChange = new EventEmitter<boolean>();
-
   faBars = faBars;
   faTwitter = faTwitter;
   faGithub = faGithub;
-  faInstagram = faInstagram
-  faSignIn = faSignIn
-  faLinkedIn = faLinkedin
+  faInstagram = faInstagram;
+  faSignIn = faSignIn;
+  faLinkedIn = faLinkedin;
+  faRemove = faRemove;
 
   constructor() {
    }
 
   ngOnInit(): void {
-  }
-
-  toggle(open: boolean = this.isCollapsed) {
-    this.collapsed = !open;
-    this.ngbCollapseChange.next(this.isCollapsed);
   }
 
 }

@@ -1,0 +1,42 @@
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <form [formGroup]="form" class="animate" action="/action_page.php" method="post" style="display: flex;"(ngSubmit)="onEnviar($event)">
+      <div class="modal-content">
+        <div class="modal-header" style="display: flex; justify-content: center; color: white;">
+          <h1 class="modal-title fs-5" id="loginModalLabel">OWNER'S LOGIN</h1>
+        </div>
+        <a type="button" class="btn close" data-bs-dismiss="modal" aria-label="Close"
+          style="position: absolute; right: 0px;"><fa-icon icon="remove" [fixedWidth]="true"></fa-icon>
+        </a>
+        <div class="modal-body">
+          <div class="container" id="loginModalLabel">
+            <label class="uname" for="uname" style="display: flex; width: 100%; color: white;"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" formControlName="uname" required
+              style="display: flex; width: 100%;" [class.border-danger]="UnameValid">
+            <div *ngIf="Uname?.errors && Uname?.touched">
+              <p *ngIf="Uname?.hasError('required')" class="error">
+                El Username es Requerido.
+              </p>
+            </div>
+            <label class="psw" for="psw" style="display: flex; width: 100%; color: white;"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" formControlName="psw" required
+              style="display: flex; width: 100%;" [class.border-danger]="PasswordValid">
+            <div *ngIf="Password?.errors  && Password?.touched">
+              <p *ngIf="Password?.hasError('required')" class="error">
+                El password es requerido.
+              </p>
+              <p *ngIf="Password?.errors?.minlength" class="error">
+                El password debe ser de 8 o más caracteres.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer" style="border-top: 0px; display:flex; flex-direction: row; flex-wrap: nowrap;">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="display:flex; width: 50%; justify-content: center;">CLOSE</button>
+          <button type="submit" class="btn btn-primary" style="width: 50%;">LOGIN</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+</div>

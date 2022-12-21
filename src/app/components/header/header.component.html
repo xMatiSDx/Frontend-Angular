@@ -24,12 +24,13 @@
             <!--- Right Elements --->
            <button class="navbar-toggler"
                    type="button"
-                   (click)="collapsed.toggle()"
+                   (click)="isCollapsed = ! isCollapsed"
                    aria-controls="navbarToggler"
                    aria-label="Toggle navigation"
-                   [attr.aria-expanded]="ngbCollapseChange"
+                   [attr.aria-expanded]="!isCollapsed"
             >
-                <fa-icon [icon]="faBars"></fa-icon>
+                <fa-icon *ngIf="isCollapsed" icon="bars"></fa-icon>
+                <fa-icon *ngIf="!isCollapsed" icon="remove"></fa-icon>
             </button>
             <div class="collapse navbar-collapse"
                  id="navbarToggler"
@@ -38,30 +39,34 @@
             > 
                 <ul class="navbar-nav">
                     <li class="nav-item me-2 mb-2">
-                        <a class="btn" role="button" aria-current="page" href="#"> 
+                        <a class="btn" role="button" aria-current="page" href="https://github.com/xMatiSDx"> 
                             <fa-icon [icon]="faGithub"></fa-icon> 
+                            <span class="d-xl-none d-lg-none d-md-none"> GitHub
+                            </span>
                         </a>
                     </li>
                     <li class="nav-item me-2 mb-2 ">
-                        <a class="btn" role="button" href="#"> 
+                        <a class="btn" role="button" href="https://twitter.com/matiarias_"> 
                             <fa-icon [icon]="faTwitter"></fa-icon>
+                            <span class="d-xl-none d-lg-none d-md-none"> Twitter
+                            </span>
                         </a>
                     </li>
                     <li class="nav-item me-2 mb-2">
-                        <a class="btn" role="button" aria-current="page" href="#"> 
+                        <a class="btn" role="button" aria-current="page" href="https://www.linkedin.com/in/matias-ezequiel-arias-4bb27621a/"> 
                             <fa-icon [icon]="faLinkedIn"></fa-icon> 
+                            <span class="d-xl-none d-lg-none d-md-none"> LinkedIn
+                            </span>
                         </a>
                     </li>
                     <li class="nav-item me-2 mb-2">
-                        <a class="btn" role="button" href="#"> 
+                        <a class="btn" role="button" href="https://www.instagram.com/matiasezequielarias_/"> 
                             <fa-icon [icon]="faInstagram"></fa-icon>
+                            <span class="d-xl-none d-lg-none d-md-none"> Instagram
+                            </span>
                         </a>
                     </li>
-                    <li class="nav-item me-2 mb-2 ">
-                        <a class="btn" role="button" href="#">
-                            <fa-icon [icon]="faSignIn"></fa-icon>
-                        </a>
-                    </li>
+                    <app-login-button></app-login-button>
                 </ul>
             </div>
         </div>
