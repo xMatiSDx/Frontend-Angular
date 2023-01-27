@@ -1,0 +1,46 @@
+<form class="add-form fadeInDown" [formGroup]="addForm" (ngSubmit)="onSubmit()" *ngIf="showAddExp">
+    <div class="row">
+        <div class="col-lg-3" style="display: flex;">
+            <div class="form-control picture">
+                <picture>
+                    <img id="profileImage" [src]="img" *ngIf="img" (click)="imageUpload()">
+                </picture>
+                <input  id="logo" type="file" formControlName="logo" placeholder="Photo" (change)="onFileChange($event)">
+            </div>
+        </div>
+        <!--- EXPERIENCES --->
+        <div class="col-lg-9 section-title">
+            <!--- EXPERIENCE TITLE --->
+            <div class="row h1" >
+                <div class="col-lg-12">
+                    <div class="form-control title" >
+                        <input type="text" formControlName="name" id="name" placeholder="ADD EXPERIENCE NAME" >
+                    </div>
+                    <div class="form-control date" style="display: block; position: relative; text-align: start; width: 100%; font-size: 20px;">
+                        <input type="text" formControlName="date" id="date" placeholder="ADD DATE INFORMATION" >
+                    </div>
+                    <div class="form-control employment" style="display: block; position: relative; text-align: start; width: 100%; font-size: 20px;">
+                        <input type="text" formControlName="employment" id="employment" placeholder="ADD EMPLOYMENT">
+                    </div>
+                </div>
+            </div>
+            <!--- EXPERIENCE DESCRIPTION --->
+            <div class="row description">
+                <div class="col-lg-12">
+                    <div class="form-control description">
+                        <textarea type="text" formControlName="description" id="description" placeholder="ADD DESCRIPTION" maxlength="1000" autosize ></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="form-control buttons" style="display: flex; flex-direction: row; align-items: flex-end;">
+                <button type="button" class="btn btn-secondary" (click)="toggleAddExp()" style="display:flex; width: 50%; justify-content: center; margin: 4px;">CANCELAR</button>
+                <button type="submit" value="Add Experience" class="btn btn-primary" style="width: 50%; margin: 4px;">ACEPTAR</button>
+            </div>
+        </div>
+    </div>
+</form>
+

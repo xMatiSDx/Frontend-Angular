@@ -8,13 +8,14 @@
                         <b>EXPERIENCE</b>
                     </span>
                     <!--- EXPERIENCE ADD BUTTON --->
-                    <app-edit-button type="edit-box" (btnClick)="editContent()" figure="add"></app-edit-button>
+                    <app-edit-button type="edit-box" (btnClick)="toggleAddExp()" figure="add"></app-edit-button>
                 </div>
                 <!--- BLUE LINE --->
-                <div class="after"></div> 
+                <div class="after"></div>
             </div>
         </div>
         <!--- EXPERIENCES ENUM --->
+        <app-experience-add (onAddExp)="addExp($event)" (onToggleAddExp)="toggleAddExp()"></app-experience-add>
         <app-experience-items></app-experience-items>
     </div>
 </section>

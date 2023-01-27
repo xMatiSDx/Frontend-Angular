@@ -1,0 +1,175 @@
+.add-form:click {
+    animation: fadeInDown 1s;
+}
+
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -10%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .add-form {
+    animation: fadeOutup 1s;
+}
+
+  @keyframes fadeOutup {
+    from {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  
+    to {
+        opacity: 0;
+        transform: translate3d(0, -10%, 0);
+      }
+  }
+
+/* .add-form {
+    animation: fadeIn 3s;
+}
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  } */
+
+#logo
+{
+    display: none;
+}
+
+#profileImage
+{
+    cursor: pointer;
+}
+
+
+.form-control {
+    background-color: #111111 ;
+    border: none;
+}
+
+.btn-primary {
+ background-color: #1639D6;
+ border: #1639D6;
+}
+
+
+/*--- EXPERIENCE ITEMS CSS ---*/
+.add-form {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* EXPERIENCE PICTURE */
+.add-form .row .col-lg-3 .picture {
+    display:flex; 
+    align-self:center; 
+    justify-content: center; 
+    margin-top: 10px; 
+    margin-bottom: 10px;
+}
+
+.add-form .row .col-lg-3 .picture img {
+    display: block; 
+    position:relative
+}
+
+.add-form .row .col-lg-3 .picture img {
+    border-bottom-left-radius: 50%; 
+    border-top-right-radius: 50%; 
+    border-bottom-right-radius: 50%; border-top-left-radius: 50%; 
+    height: 168px; 
+    width: 168px
+}
+/* EXPERIENCE TITLE */
+.add-form .section-title {
+    align-content: center; 
+    display: flex; 
+    flex-direction: column; 
+}
+
+.add-form .section-title .h1 {
+    display: flex; 
+    flex-wrap: nowrap;
+}
+
+.add-form div .col-lg-12 {
+    display:flex; 
+    justify-content: center; 
+    align-content: center; 
+    flex-direction: column;
+}
+
+.add-form div .col-lg-12 .title {
+    display: flex; 
+    position: relative; 
+    align-items: center;
+    text-align: start; 
+    width: 100%;
+}
+
+.add-form div .col-lg-12 .title input {
+    width: 100%;
+    background-color: #111111;
+    border: none;
+    color:white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.add-form div .col-lg-12 .date input {
+    width: 100%;
+    background-color: #111111;
+    border: none;
+    color: #212529;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.add-form div .col-lg-12 .employment input {
+    width: 100%;
+    background-color: #111111;
+    border: none;
+    color: #212529;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.add-form div .col-lg-12 .description textarea {
+    width: 100%;
+    background-color: #111111;
+    border: none;
+    color: white;
+    font-size: 15px;
+}
+
+
+/*--- EXPERIENCE DESCRIPTION ---*/
+.description {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.description .col-lg-12 {
+    align-content: center; 
+    display:flex; 
+    justify-content: center;
+}
+
+.description .col-lg-12 .text {
+    display: block; 
+    position: relative; 
+    text-align: justify;
+}
+
+.description .col-lg-12 span {
+    color: white;
+}

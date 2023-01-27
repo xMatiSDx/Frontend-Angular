@@ -15,6 +15,11 @@
     color: red;
 }
 
-modal-header {
+.modal-header {
     border-bottom: none;
 }
+
+.btn-primary {
+    background-color: #1639D6;
+    border: #1639D6;
+   }

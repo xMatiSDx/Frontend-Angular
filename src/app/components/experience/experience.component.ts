@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { ExperienceService } from 'src/app/services/experience-service.service';
+import { Experiences } from 'exp';
 
 @Component({
   selector: 'app-experience',
@@ -7,18 +9,25 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ExperienceComponent implements OnInit {
 
+  experiences: Experiences[] = [];
 
-  constructor() { }
+  constructor(private info:ExperienceService) { 
+  }
 
-  editContent() {
-    console.log('Edit!')
+  ngOnInit(): void {
+  }
+
+  toggleAddExp() {
+    this.info.toggleAddExp();
   }
 
   changePicture() {
     console.log('Change Picture!')
   }
 
-  ngOnInit(): void {
-  }
+  addExp(exp: Experiences) {
+    this.info.addExp(exp).subscribe((exp)=>(this.experiences.push(exp)))
+    console.log(this.experiences)
+    }
 
 }

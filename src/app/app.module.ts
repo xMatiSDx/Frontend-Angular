@@ -23,6 +23,8 @@ import { LoginButtonComponent } from './components/login/login-button/login-butt
 import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 import { SkillsItemsComponent } from './components/skills/skills-items/skills-items.component';
 import { SlidersComponent } from './components/skills/sliders/sliders.component';
+import { ExperienceAddComponent } from './components/experience/experience-add/experience-add.component';
+import { AutosizeModule } from 'ngx-autosize';
 
 
 
@@ -42,6 +44,7 @@ import { SlidersComponent } from './components/skills/sliders/sliders.component'
     LoginButtonComponent,
     SkillsItemsComponent,
     SlidersComponent,
+    ExperienceAddComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,6 +56,7 @@ import { SlidersComponent } from './components/skills/sliders/sliders.component'
     FormsModule,
     ReactiveFormsModule,
     NgbModalModule,
+    AutosizeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
